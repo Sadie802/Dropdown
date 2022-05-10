@@ -1,38 +1,119 @@
-.App {
+@import url('https://fonts.google.com/specimen/Epilogue');
+
+body{
+  background-color: hsl(0, 0%, 98%);
+  height:100vh;
+}
+
+.mainDisplay{
+  background-color: rgb(255, 255, 255);
+  height:90vh;
+  width:90vw;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 5px 5px 15px 0px gray;
+}
+
+.nav{
+  display: flex;
+  width:70%;
+  list-style: none;
+}
+
+.navItem{
+  width:100px;
+  color:hsl(0, 0%, 41%);
+  margin:10px;
+}
+
+.navItem:hover{
+  color:hsl(0, 0%, 8%)
+}
+
+#actBtns{
+  display: flex;
+  list-style: none;
+  height: fit-content;
+}
+
+.drop{
+  list-style: none;
+  position: absolute;
+  z-index: 1;
+  text-align: start;
+  margin-top:10px;
+}
+
+#navDisplay{
+  display: flex;
+  justify-content: space-around;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#img{
+  float: left;
+  padding:20px
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#contentGrid{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#footerImg{
+  display: flex;
+  justify-content: space-around;
+  height:20px;
+}
+
+#leftTitle{
+  font-family: 'Epilogue' sans-serif;
+  font-weight: 700;
+  font-size: 75px;
+  margin-bottom: 0px;
+  color: hsl(0, 0%, 8%)
+}
+
+p{
+  font-size: 18px;
+  font-family: 'Epilogue' sans-serif;
+  width:70%;
+  color:hsl(0, 0%, 41%)
+}
+
+button{
+  background-color: hsl(0, 0%, 8%);
+  color:white;
+  border-radius: 15px;
+  height:50px;
+  width:150px;
+  font-size: 18px;
+  font-family: 'Epilogue' sans-serif;
+}
+
+button:hover{
+  background-color: white;
+  color:black
+}
+
+#leftGrid{
+  margin-left:80px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-evenly;
 }
 
-.App-link {
-  color: #61dafb;
+.register{
+  border:1px solid hsl(0, 0%, 41%);
+  border-radius: 15px;
+  padding:10px;
+  text-align:center;
+  margin-top:0px;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.dropItem{
+  margin-bottom:10px;
 }
